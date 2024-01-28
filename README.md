@@ -1,5 +1,5 @@
 # 지파두 - 지각 파는 두더지 (Zipadoo)
-테킷 iOS앱스쿨 2기 최종프로젝트
+iOS앱스쿨 2기 최종프로젝트
 
 
 ## <img width = "5%" src = "https://github.com/APPSCHOOL3-iOS/final-zipadoo/assets/102401977/6785967f-2630-4cd4-95ab-634833cd2d51"/> 목차
@@ -16,8 +16,7 @@
 
 ## <img width = "5%" src = "https://github.com/APPSCHOOL3-iOS/final-zipadoo/assets/102401977/6785967f-2630-4cd4-95ab-634833cd2d51"/>프로젝트 소개
 > ADS
->  - 자주 지각하는 사람들에게는 습관을 고칠 수 있도록 동기를 제공하고 
-> 지각하지 않는 사람들에게는 소소한 금전적 보상과 성취감을 제공해주는 앱 입니다.
+>  - 친구나 지인들과 약속을 만들고, 약속 시간에 인접했을 때 서로의 위치를 공유하고 도착자의 순위와 지각자를 확인하는 앱입니다.
 
 - 친구들과 약속을 잡으면 지도상에 약속참여자의 위치를 실시간으로 보여주어 약속을 지키는 문화를 만들고자 하는 iOS앱
 (사진)
@@ -41,7 +40,7 @@
     - 개발언어 : Swift
     - 개발환경 : iOS 17.0, XCode Version 15.0 / Firebase
     - 협업도구 : Github, Discord, Figma, Notion, SwiftLint
-    - 라이브러리 : Firebase, SwiftLint, Lottie, Alamofire, TossPayments
+    - 라이브러리 : Firebase, SwiftLint, Lottie, Alamofire
 
 
 ## <img width = "5%" src = "https://github.com/APPSCHOOL3-iOS/final-zipadoo/assets/102401977/6785967f-2630-4cd4-95ab-634833cd2d51"/>아키텍처
@@ -52,27 +51,37 @@ mvvm에 따르려 했으나 실제 작업시에 여러뷰에 필요한 뷰모델
 ## <img width = "5%" src = "https://github.com/APPSCHOOL3-iOS/final-zipadoo/assets/102401977/6785967f-2630-4cd4-95ab-634833cd2d51"/>컨벤션
 - 폴더 구조
 ```
-📦 AppleStore
+📦 Zipadoo
 |
-+--- 🗂 App // app 실행 파일 폴더
++--- 🗂 App 
 |
-+--- 🗂 Extention // Extention 파일 폴더
++--- 🗂 Extention 
 |
-+--- 🗂 Modifier // Modifier 파일 폴더
++--- 🗂 Modifier 
 |
-+--- 🗂 Views // View.swift 폴더
++--- 🗂 Enum 
+|
++--- 🗂 Views 
 |    |
-|    +--- 🗂 Home // HomeView의 파일들
+|    +--- 🗂 OnboardingViews 
 |    |
-|    +--- 🗂 Friends // FriendsView의 파일들
+|    +--- 🗂 Alerts 
 |    |
-|    +--- 🗂 Mypage // MypageView의 파일들
+|    +--- 🗂 Login
+|    |
+|    +--- 🗂 Home
+|    |
+|    +--- 🗂 Friends
+|    |
+|    +--- 🗂 MypageViews 
 |
-+--- 🗂 Models // Models 파일 폴더, 모델이 많아지면 뷰별로 묶어서 분류하셔도 됩니다.
++--- 🗂 Models 
 |
-+--- 🗂 ViewModels // ViewModels 파일 폴더
++--- 🗂 ViewModels 
 |
-+--- 🗂 TestData // TestData 파일 폴더
++--- 🗂 TestData 
+|
+📦 ZipadooWidget
 ```
 
 ## 화면별 기능 소개
